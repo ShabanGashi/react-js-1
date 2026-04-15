@@ -27,7 +27,7 @@ function FormSubmit() {
             return
         }
         if (password[0] !== password[0].toUpperCase()) {
-            setError("password uppercase")
+            setError("password needs to uppercase")
             return;
         }
         setError("");

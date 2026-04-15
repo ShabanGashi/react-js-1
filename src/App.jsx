@@ -1,19 +1,19 @@
-import Header from './components/app/header/Header'
-import Counter from './components/app/studentcounter/StudentCounter'
-import Course from './components/app/courses/courses'
-import Students from './components/app/showstudents/ShowStudents'
-import FormSubmit from './components/form/FormSubmit'
+import { Routes, Route } from "react-router-dom"
+import NotFound from "./components/pages/NotFound"
+import Home from "./components/pages/Home"
+import Contact from "./components/pages/Contact"
+import About from "./components/pages/About"
 
 function App() {
   return (
-    <>
-      <Header />
-      <Counter />
-      <Course />
-      <Students />
-      <hr />
-      <FormSubmit />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/About" element={<About />} />
+      <Route path="/Contact" element={<Contact />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+
+
   )
 }
 

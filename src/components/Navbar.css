@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+
+h1 {
+    text-align: center;
+    color: #61dafb;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
